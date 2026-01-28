@@ -21,7 +21,7 @@ def earthquake_search():
         return
 
     finished = False
-    for offset_num in range(0, 5000, 100):
+    for offset_num in range(0, 1000, 100):
         if finished: break
         url = f"https://api.p2pquake.net/v2/history?codes=551&limit=100&offset={offset_num}"
         response = requests.get(url)
